@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  Q.21What are the looping structures in JavaScript? Any one Example?
+// Q.22Write a print 972 to 897 using for loop in JS?
+        for(let i=972;i>=897;i--){
+            console.log(i);
+        }
+
+// Q.23Write to print factorial of given number?
+      let numb=20
+      if(numb===0 || numb===1){
+        console.log(1);
+      }
+      let result= 1;
+      for(let i=numb;i>1;i--){
+        result *=i;
+      }
+      console.log(result);
+        
+
+// Q.24Write to print Fibonacci series up to given numbers?
+const number = 7;
+        let n1 = 0, n2 = 1, nextTerm;
+
+        console.log('Fibonacci Series:');
+
+        for (let i = 1; i <= number; i++) {
+            console.log(n1);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+
+        }
+
+// Q.25Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS?
+function reverseNum(num) {
+	return (
+    parseFloat(
+      num
+        .toString()
+        .split('')
+        .reverse()
+        .join('')
+    ) * Math.sign(num)
+  )
+}
+console.log(reverseNum(89765));
+
+// Q.26Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?
+function sumOfDigit(num) {
+    return num.toString().split("")
+        .reduce((sum, digit) =>
+            sum + parseInt(digit), 0);
+}
+
+console.log(sumOfDigit(738));
+
+// Q.27 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - 5) in JS?
+
+
+// Q.30 Accept 3 numbers from user using while loop and check each numbers palindrome
+// let p=parseInt(prompt("Enter number 1:"))
+// let q=parseInt(prompt("Enter number 2:"))
+// let r=parseInt(prompt("Enter number 3:"))
+// if(p === q || q===r || r===p ){
+//     console.log("number is palidrome");
+// }else{
+//     console.log("number is not palidrome");
+// }
+
+// Q.32Write a JavaScript program to get the current date?
+    let d=new Date()
+    console.log(d);
+
+    // Q.48 Print the length of the string on the browser console using console.log()?
+        let str="Hello World!"
+        console.log("String length is :",str.length);
+
+        // Q.49 Change all the string characters to capital letters using toUpperCase() method?
+        console.log("Uppercase String:",str.toUpperCase());
+
+        // Q.63 Change all the string characters to lowercase letters using toLowerCase() Method.
+        console.log("String to lowercase",str.toLowerCase());
+
+        // Q.64 What is Character at index 15 in ’30 Days of JavaScript’ string? Use charAt() method.\
+        let str1="30 Days of JavaScript"
+        console.log("Character at index 15 is:",str.charAt(15));
+    </script>
+</body>
+</html>

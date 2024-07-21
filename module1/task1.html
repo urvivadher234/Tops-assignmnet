@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  Q.1Using console.log() print out the following statement: The quote 'There is 
+// no exercise better for the heart than reaching down and lifting people up.' by 
+// John Holmes teaches us to help one another. Using console.log() print out the 
+// following quote by Mother Teresa:
+        console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another");
+
+// Q.2Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+        let x='10'
+        let y= 10
+        console.log(x===y);
+        x=10
+        console.log(x===y);
+        
+// Q.3Write a JavaScript Program to find the area of a triangle?
+        let l=2
+        let h=5
+        console.log("Area of triangle is :",1/2*l*h);
+
+// Q.4Write a JavaScript program to calculate days left until next Christmas?
+
+// Q.5 What is Condition Statement?
+// Conditional statements allow us to execute specific blocks of code based on conditions andd If the condition meets then a particular block of action will be executed otherwise it will execute else part of code.
+        let num = 20;
+        if (num % 2 === 0) {
+        console.log("Given number is even number.");
+        }else{
+            console.log("Given number is odd number.");
+        }
+
+// Q.6 Find circumference of Rectangle formula : C = 4 * a ?
+        let a=10;
+        var c=4*a;
+        console.log("circumference of Rectangle is : ",c);
+
+// Q.7 WAP to convert years into days and days into years?
+        const days = 738;
+        const calculateTimimg = d => {
+        let months = 0, years = 0, days = 0, weeks = 0;
+        while(d){
+        if(d >= 365){
+                years++;
+                d -= 365;
+        }else if(d >= 30){
+                months++;
+                d -= 30;
+        }else if(d >= 7){
+                weeks++;
+                d -= 7;
+        }else{
+                days++;
+                d--;
+        }
+        };
+        return {
+        years, months, weeks, days
+        };
+        };
+        console.log(calculateTimimg(days));
+
+// Q.8 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+        let temp=300;
+        console.log("Fahrenheit to celsius is :",(temp - 32) * 5 / 9);
+
+// Q.9 Write a JavaScript exercise to get the extension of a filename.?
+        filename = "system.php";
+
+        console.log(filename.split('.').pop());
+
+
+// Q.10What is the result of the expression (5 > 3 && 2 < 4)?
+        console.log(5 > 3 && 2 < 4);
+
+// Q.11What is the result of the expression (true && 1 && "hello")?
+        console.log(true && 1 && "hello");
+
+// Q.12What is the result of the expression true && false || false && true?
+        console.log(true && false || false && true);    
+
+// Q.13Check Number Is Positive or Negative in JavaScript?
+        let p=50
+        if(p>0){
+            console.log("Number is positive");
+
+        }else{
+            console.log("Number is nagative");
+        }
+
+// Q.14Find the Character Is Vowel or Not ?
+        let ch='b';
+        if(ch==='a' || ch==='e' || ch==='i' || ch==='o' || ch==='u'){
+            console.log("character is vowel");
+        }else{
+            console.log("character is not vowel");
+        }
+
+// Q.15Write to check whether a number is negative, positive or zero?
+        if (num>0) {
+            console.log("number is positive");
+        } else if(num==0) {
+            console.log("Number is zero");
+        }else{
+            console.log("Number is nagative");
+        }
+
+// Q.16Write to find number is even or odd using ternary operator in JS?
+        let oe=(num % 2 === 0)?(console.log("Even")):(console.log("Odd"))
+
+// Q.17Write find maximum number among 3 numbers using ternary operator in JS?
+        let num1=32
+        let num2=21
+        let num3=56
+        let max=(num1>num2)?
+        (num1>num3)?
+        (console.log("Num1 is maximum")):
+        (num2>num3)?
+        (console.log("Num2 is maximum")):
+        (console.log("Num3 is maximum")):
+        console.log("error")
+
+// Q.18Write to find minimum number among 3 numbers using ternary operator in JS?
+        let min=(num1<num2)?
+        (num1<num3)?
+        console.log("Num1 is minimum"):
+        console.log("Num2 is minimum"):
+        (num2<num3)?
+        console.log("Num2 is minimum"):
+        console.log("Num3 is minimum");
+
+// Q.19Write to find the largest of three numbers in JS?
+        let max2=(num1>num2)?
+        (num1>num3)?
+        (console.log("Num1 is largest")):
+        (num2>num3)?
+        (console.log("Num2 is largest")):
+        (console.log("Num3 is largest")):
+        console.log("error")
+
+// Q.20Write to show
+// i. Monday to Sunday using switch case in JS?
+        let d= new Date();
+        let day=d.getDay();
+        switch(day){
+            case 0: console.log("sunday");
+            break;
+            case 1: console.log("monday");
+            break;
+            case 2: console.log("tuesday");
+            break;
+            case 3: console.log("wednsday");
+            break;
+            case 4: console.log("thursday");
+            break;
+            case 5: console.log("friday");
+            break;
+            case 6: console.log("saturday");
+            break;
+            default: console.log("error");
+        }
+// ii. Vowel or Consonant using switch case in JS?
+            switch(ch){
+                case 'a' : console.log("vowel");
+                break;
+                case 'e' : console.log("vowel");
+                break;
+                case 'i' : console.log("vowel");
+                break;
+                case 'o' : console.log("vowel");
+                break;
+                case 'u' : console.log("vowel");
+                break;
+                default: console.log("not vowel");
+            }
+    </script>
+</body>
+</html>
