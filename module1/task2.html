@@ -22,7 +22,7 @@
       for(let i=numb;i>1;i--){
         result *=i;
       }
-      console.log(result);
+      console.log("factorial is :"+result);
         
 
 // Q.24Write to print Fibonacci series up to given numbers?
@@ -48,19 +48,13 @@ function reverseNum(num) {
         .split('')
         .reverse()
         .join('')
-    ) * Math.sign(num)
+    ) 
   )
 }
-console.log(reverseNum(89765));
+console.log("reverse number is :"+reverseNum(89765));
 
 // Q.26Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?
-function sumOfDigit(num) {
-    return num.toString().split("")
-        .reduce((sum, digit) =>
-            sum + parseInt(digit), 0);
-}
-
-console.log(sumOfDigit(738));
+let sum=0
 
 // Q.27 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - 5) in JS?
 
