@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            margin: auto;
+            background: grey;
+            height: 500px;
+            width: 500px;
+            align-content: center;
+            text-align: center;
+
+        }
+        button{
+            height: 40px;
+            width: 160px;
+            background: skyblue;
+            border-radius: 7px;
+            border-style: hidden;
+            font-size: medium;
+        }
+    </style>
+    <div id="div">
+    <button id="btn" onclick="changebg()">Change BG Color</button>
+    </div>
+</body>
+<script>
+    let div=document.getElementById("div");
+    let btn=document.getElementById("btn");
+    let changebg=()=>{
+        div.style.backgroundColor="skyblue";
+        btn.style.backgroundColor="grey";
+        
+    }
+</script>
+</html>

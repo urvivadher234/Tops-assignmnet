@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #maindiv{
+            margin: auto;
+            border: 3px solid black;
+            width: 400px;
+            padding: 20px;
+        }
+        p,h3{
+            text-align: center;
+        }
+        #txtdiv{
+            display: flex;
+            gap: 150px;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            font-size:medium;
+        }
+        table{
+            
+            padding: 4px;
+        }
+    </style>
+    <div id="maindiv">
+        <h3>Marksheet for Information Technology</h3>
+        <p>Enter marks</p>
+        <table>
+            <tr>
+                <td>1. C language :</td>
+                <td><input id="c" type="text"></td>
+            </tr>
+            <tr>
+                <td>2. C++ language :</td>
+                <td><input id="c++" type="text"></td>
+            </tr>
+            <tr>
+                <td>3. Database :</td>
+                <td><input id="db" type="text"></td>
+            </tr>
+            <tr>
+                <td>4. HTML :</td>
+                <td><input id="html" type="text"></td>
+            </tr>
+            <tr>
+                <td>5. CSS :</td>
+                <td><input id="css" type="text"></td>
+            </tr>
+            <tr>
+                <td>6. php :</td>
+                <td><input id="php" type="text"></td>
+            </tr>
+            <tr>
+                <td>7. Core java :</td>
+                <td><input id="cj" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="result()">Result</button></td>
+            </tr>
+        </table>
+        <div id="txtdiv">
+            <p id="total">Total is :</p>
+            <p id="percentage">Percentage is :</p>
+        </div>
+    </div>
+    <script>
+        let c=document.getElementById("c");
+        let cpp=document.getElementById("c++");
+        let db=document.getElementById("db");
+        let html=document.getElementById("html");
+        let css=document.getElementById("css");
+        let php=document.getElementById("php");
+        let cj=document.getElementById("cj");
+        
+        let result=()=>{
+           
+           let sum= parseInt(c.value)+parseInt(cpp.value)+parseInt(db.value)+parseInt(html.value)+parseInt(css.value)+parseInt(php.value)+parseInt(cj.value)
+           document.getElementById("total").innerHTML="Total is :"+sum
+           document.getElementById("percentage").innerHTML="Percentage is :"+(sum/7)
+        }
+
+    </script>
+</body>
+</html>

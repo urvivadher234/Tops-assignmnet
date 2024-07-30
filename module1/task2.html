@@ -40,45 +40,191 @@ const number = 7;
         }
 
 // Q.25Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS?
-function reverseNum(num) {
-	return (
-    parseFloat(
-      num
-        .toString()
-        .split('')
-        .reverse()
-        .join('')
-    ) 
-  )
-}
-console.log("reverse number is :"+reverseNum(89765));
+        let sum=0;
+        
+        let rev=0;
+        let num=23456;
+        while (num>0) {
+            let r=num%10;
+            num=Math.floor(num/10);
+
+            rev=rev*10+r;
+            sum=sum+r;
+        }
+        console.log("Reverse number is :"+rev);
+        
+
+
 
 // Q.26Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?
-let sum=0
+console.log("summation of number is:"+sum);
+
 
 // Q.27 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - 5) in JS?
+let no=23456;
+let st=no.toString().split('');
+let s=parseInt(st[0]);
+let s2=parseInt(st[(st.length)-1]);
+
+console.log("First and last digit sum is :",s+s2);
 
 
 // Q.30 Accept 3 numbers from user using while loop and check each numbers palindrome
-// let p=parseInt(prompt("Enter number 1:"))
-// let q=parseInt(prompt("Enter number 2:"))
-// let r=parseInt(prompt("Enter number 3:"))
-// if(p === q || q===r || r===p ){
-//     console.log("number is palidrome");
-// }else{
-//     console.log("number is not palidrome");
-// }
+let p = 852  
+let rev1=0;
+let q=258;
+let rev2=0
+let t=456;
+let rev3=0;
+
+        while (p>0) {
+            let r1=p%10;
+            p=Math.floor(p/10);
+
+            rev1=rev1*10+r1;
+            
+        }
+        while (q>0) {
+            let r2=q%10;
+            q=Math.floor(q/10);
+
+            rev2=rev2*10+r2;
+            
+        }
+        while (t>0) {
+            let r3=t%10;
+            t=Math.floor(t/10);
+
+            rev3=rev3*10+r3;
+            
+        }
+        if (p==q||q==r||r==p||p==rev2||q==rev1||p==rev3||q==rev3||p==rev1||q==rev2||t==rev1||t==rev2||t==rev3) {
+            console.log("Given number is palindrome");
+        } else {
+            console.log("Given number is not palindrome");
+        }
+
+    //Q.31 Write a JavaScript Program to display the current day and time in the following format. Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?
+    let da= new Date();
+    let day=da.getDay();
+    
+        switch(day){
+            case 0: console.log("Today is sunday "+(da.toTimeString()));
+            break;
+            case 1: console.log("Today is monday "+(da.toTimeString()));
+            break;
+            case 2: console.log("Today is tuesday "+(da.toTimeString()));
+            break;
+            case 3: console.log("Today is wednsday "+(da.toTimeString()));
+            break;
+            case 4: console.log("Today is thursday "+(da.toTimeString()));
+            break;
+            case 5: console.log("Today is friday "+(da.toTimeString()));
+            break;
+            case 6: console.log("Today is saturday "+(da.toTimeString()));
+            break;
+            default: console.log("error");}
 
 // Q.32Write a JavaScript program to get the current date?
     let d=new Date()
     console.log(d);
 
+    // Q.33Write a JavaScript program to compare two objects?
+ let obj1=[{
+    name:"Urvi",
+    age:21
+ },
+{
+    name:"Yash",
+    age:17
+}];
+ let obj2=[{
+    name:"Kavita",
+    age:40
+ }];
+let com=(obj1,obj2)=>{
+    let key1=obj1.forEach(i => {
+        let val=i.name+i.age;
+    });
+    let key2=obj2.forEach(i=>{
+        let vall=i.name+i.age;
+    })
+    if (key1==key2) {
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log(com(obj1,obj2));
+
+// Q.34Write a JavaScript program to convert an array of objects into CSV string?
+
+const csvstr = [
+    ["Name", "Age"],
+    ...obj1.map(item => [item.name, item.age])
+];
+const finalstr = csvstr.map(row => row.join(",")).join("\n");
+console.log(finalstr);
+
+// Q.35Write a JavaScript program to capitalize first letter of a string?
+let strr="my name is urvi"
+let fl=strr[0].toUpperCase();
+console.log(fl+strr.slice(1,(strr.length)));
+
+// Q. 45 Write a JavaScript program to determine if a variable is array?
+let arr=[2,3,4,5,6,7]
+let ty=typeof(arr);
+if (ty=="object") {
+    console.log("It is array");
+} else {
+    console.log("It is not array");
+}
+
+// Q.46 Write a JavaScript program to clone an array?
+let clonearr=[...arr];
+console.log("Clone array is :"+clonearr);
+
+
+// Q.47 What is the drawback of declaring methods directly in JavaScript objects?
+//Ans: It may ocure Lack of encapsulation to hide private methods and properties And Hard to manage with large and multiple objects.
+
+
     // Q.48 Print the length of the string on the browser console using console.log()?
-        let str="Hello World!"
+        let str="Hello! welcome to the javascript."
         console.log("String length is :",str.length);
 
         // Q.49 Change all the string characters to capital letters using toUpperCase() method?
         console.log("Uppercase String:",str.toUpperCase());
+
+        // Q.51 Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
+        const today = new Date();
+const yyyy = today.getFullYear();
+let mm = today.getMonth() + 1; // Months start at 0!
+let dd = today.getDate();
+
+if (dd < 10) dd = '0' + dd;
+if (mm < 10) mm = '0' + mm;
+
+const formattedToday = dd + '/' + mm + '/' + yyyy;
+console.log("Today's date in dd/mm/yyyy format:"+formattedToday);
+
+// Q.52 Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript?
+console.log("Index of a is :",str.indexOf("a"));
+
+// Q,53 Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript?
+console.log("Last Index of a is :",str.lastIndexOf("a"));
+
+// Q.61 Split the string into an array using split() Method?
+let strarr=str.split('');
+console.log("String array is:",strarr);
+
+// Q.62 Check if the string contains a word Script using includes() method?
+if (str.includes("word")) {
+    console.log("It is containing");
+} else {
+    console.log("Not containing");
+}
 
         // Q.63 Change all the string characters to lowercase letters using toLowerCase() Method.
         console.log("String to lowercase",str.toLowerCase());
@@ -86,6 +232,10 @@ let sum=0
         // Q.64 What is Character at index 15 in ’30 Days of JavaScript’ string? Use charAt() method.\
         let str1="30 Days of JavaScript"
         console.log("Character at index 15 is:",str.charAt(15));
+
+        // Q.65 copy to one string to another string in JS?
+    let copystr=str;
+    console.log("string copy is :",copystr);
     </script>
 </body>
 </html>
