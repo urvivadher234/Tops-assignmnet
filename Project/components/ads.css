@@ -1,0 +1,44 @@
+.addiv{
+    background-image: url('C:\Users\tops03\Desktop\Reactjs\myproject\public\slideshow\medium-shot-business-women-high-five.jpeg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.secdiv{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+.textdiv{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    margin-top: 250px;
+    margin-left: 110px;
+    width: 400px;
+}
+
+.textdiv h1{
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textdiv p{
+    font-size: 20px;
+}
+
+.explorebtn{
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

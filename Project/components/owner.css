@@ -1,0 +1,26 @@
+.maindiv{
+    height: fit-content;
+    background-color: rgb(124, 166, 153);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.explorebtn{
+    /* background-color:rgb(139, 186, 171) ; */
+    /* color: black; */
+}
+.text-div{
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+.ownerimg{
+    margin-top: 60px;
+}
+.ownerimg img{
+    height: 330px;
+}
+

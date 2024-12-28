@@ -1,0 +1,25 @@
+.frontdiv{
+    background-color: rgb(124, 166, 153);
+    padding: 70px;
+}
+span{
+    color:darkred;
+}
+.frontdiv h1{
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.qadiv{
+    padding: 90px;
+
+}
+.qadiv h1{
+    color:darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:45px ;
+}
+.qadiv h3{
+    font-size:25px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}

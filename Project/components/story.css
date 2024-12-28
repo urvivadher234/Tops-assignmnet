@@ -1,0 +1,32 @@
+.titlediv{
+    display: flex;
+    background-color: rgb(124, 166, 153);
+    justify-content: flex-end;
+}
+.txt{
+padding-right: 500px;
+padding-top: 100px;
+font-size: 30px;
+}
+.team-div{
+    background-color: rgb(179, 175, 175);
+    padding:50px ;
+}
+.titel-div{
+    
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.member-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.member{
+    width: fit-content;
+    box-sizing: border-box; 
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}

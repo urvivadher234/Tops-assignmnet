@@ -1,0 +1,43 @@
+.img-div{
+    
+    height: fit-content;
+    width: fit-content;
+}
+img{
+    height: 300px;
+}
+
+.prname-div{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.second-div{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+    
+}
+.pr-div{
+    background-color: beige;
+    padding: 36px;
+
+}
+.first-div{
+    text-align: center;
+}
+.explore-btn{
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
